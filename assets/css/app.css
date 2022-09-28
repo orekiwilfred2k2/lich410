@@ -20,9 +20,77 @@ body {
     height: 500px;
     width: 500px;
 }
-#time-containner {
+#time-container, #date-container{
     text-align: center;
 }
-#date-containner {
+
+.job-container{
+    display: flex;
+    align-items: center;
+}
+.job-content{
+    margin-right: 20px;
+    min-width: 290px;
+}
+.rd-button{
+    padding: 6px;
+    background-color: rgb(162, 200, 241);
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+}
+
+.modal-wrapper.open {
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    position: relative;
+    width: 350px;
+    height: 170px;
+    max-width: calc(100% - 32px);
+    border-radius: 12px;
+    animation: modalFadeIn ease .5s;
+}
+
+.clear-modal{
+    position: relative;
+    top: -70px;
+    right: 35px;
+    font-size: 30px;
+    font-family:'Segoe UI', Taoma, Geneva, Verdana, sans-serif;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.modal-header{
     text-align: center;
+    font-size: 30px;
+    margin: 6px;
+    font-family:'Segoe UI', Taoma, Geneva, Verdana, sans-serif;
+}
+
+.random-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#Layer_1{
+    margin-top: 30px;
 }
