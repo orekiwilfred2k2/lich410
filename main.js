@@ -35,7 +35,7 @@ setInterval(renderTime, 1000)
 
 let jobassign = []
 function newWeek() {
-    let now = new Date('10/3/2022') ;
+    let now = new Date() ;
     var start = new Date(now.getFullYear(), 0, 3);
     var dif = now - start;
     var weekIndex = Math.floor(dif / (1000 * 60 * 60 * 24 * 7));
