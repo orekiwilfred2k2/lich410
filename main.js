@@ -1,5 +1,5 @@
-const jobs = ['Vứt rác  ', 'Quét nhà ', 'Bưng nước'];
-const members = [['Công', 'Hải'] ,  ['Phú', 'Vũ'], ['Nam','Thịnh']]
+const jobs = ['Vứt rác  ', 'Bưng nước', 'Quét nhà '];
+const members = [['Phú', 'Vũ'], ['Công', 'Hải'],  ['Nam','Thịnh']]
 
 console.log(jobs[2].length)
 let timeContainer = document.querySelector('#time-container');
@@ -35,7 +35,8 @@ setInterval(renderTime, 1000)
 
 let jobassign = []
 function newWeek() {
-    let now = new Date() ;
+    let now = new Date();
+    console.log(now)
     var start = new Date(now.getFullYear(), 0, 3);
     var dif = now - start;
     var weekIndex = Math.floor(dif / (1000 * 60 * 60 * 24 * 7));
