@@ -10,7 +10,6 @@ const addZeroTime = (num) => {
     if (num < 10) return `0${num}`
     else return `${num}`
 }
-// Render Time.......
 const renderTime = () => {
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let today = new Date();
